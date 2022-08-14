@@ -1,0 +1,41 @@
+.text {
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+h2 {
+    color: #f4f4f4;
+}
+.link {
+    color: #FF0000;
+}
+.h3 {
+    color: #f4f4f4;
+    padding-top: 10px;
+    margin: 0 0 12px;
+    font-weight: 700;
+    line-height: 1.6em;
+    letter-spacing: 0;
+}
+.p {
+    color: #f4f4f4;
+    font-size: 16px;
+    margin: 0 0 12px;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: 0;
+}
+@media only screen and (max-width: 1200px){
+    .home__logo-link {
+        font-size: 30px;
+    }
+    .h2, .h3, .p {
+        text-align: center;
+        width:100%;
+    }  
+    .footer {
+        width: 100%;
+        font-size: 14px;
+    }
+
+}

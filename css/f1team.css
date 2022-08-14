@@ -1,0 +1,274 @@
+body {
+    background-color: black;
+}
+/* section with background */
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/f1teambck.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+.top__bck-div {
+    padding-left: 30px;
+
+}
+.bck__img {
+    display: block;
+    margin-top: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+.bck__h1 {
+    color: white;
+}
+.bck__p {
+    color: white;
+}
+/* new era section */
+.new__era-div {
+    background-image: url(../images/newera.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+.new__era-img {
+    width: 100%;
+}
+.new__era-h2 {
+    color: white;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.new__era-p {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* c42 section */
+.c42__div {
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+}
+.c42__h2 {
+    color: white;
+    background-color: black;
+    padding-left: 40px;
+}
+.c42 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* valtteri section */
+.valtteri {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.valt__content {
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 50%;
+}
+.valt__head {
+    padding-bottom: 20px;
+}
+.valt__img {
+    width: 770px;
+    height: auto;
+    padding-right: 10px;
+    object-fit: cover;
+}
+/* guanyu section */
+.guanyu {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.guanyu__img {
+    width: 770px;
+    height: auto;
+    object-fit: cover;
+    padding-left: 10px;
+    padding-right: auto;
+}
+.guanyu__content {
+    color: white;
+    padding-right: 10px;
+    padding-left: 20px;
+    width: 50%;
+}
+.guanyu__head {
+    padding-bottom: 20px;
+}
+/* robert kubica section */
+.robert {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.robert__content {
+    color: white;
+    width: 50%;
+    padding-left: 10px;
+}
+.robert__head {
+    padding-bottom: 20px;
+}
+.robert__img {
+    width: 770px;
+    height: auto;
+    object-fit: cover;
+    padding-right: 10px;
+    padding-left: auto;
+}
+@media only screen and (max-width:1200px) {
+    .top__bck-div {
+        width: 100%;
+    }
+    .banner {
+        background-image:url('../images/f1teambck.jpg');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: cover contain;
+        background-position: right;
+        
+    }
+    .new__era-div {
+        padding-top: 400px;
+        width: 100%;
+        min-height: auto;
+        background-image:url('../images/newera.jpg');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: contain;
+        background-position: top;
+        background-color: black;
+    }
+    .new__era-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .c42__div {
+        width: 100%;
+        height: auto;
+    }
+    .valtteri {
+        width: 100%;
+    }
+    .valt__content {
+        width: 100%;
+        padding: 20px;
+    }
+    .valt__img {
+        width: 100%;
+    }
+    .guanyu {
+        flex-direction: column;
+        width: 100%;
+    }
+    .guanyu__content {
+        width: 100%;
+        padding: 20px;
+    }
+    .guanyu__img {
+        width: 100%;
+    }
+    .robert {
+        flex-direction: column;
+    }
+    .robert__content {
+        width: 100%;
+        padding: 20px;
+    }
+    .robert__img {
+        width: 100%;
+    }
+    .valtteri, .robert {
+        flex-direction: column-reverse;
+    }
+    
+}
+@media only screen and (max-width:575px) {
+    .top__bck-div {
+        width: 100%;
+    }
+    .banner {
+        width: 100%;
+        background-image:url('../images/f1teambck.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-position: 100% 50%;
+        
+    }
+    .new__era-div {
+        width: 100%;
+        min-height: auto;
+        padding-top: 200px;
+        padding-bottom: 0;
+        background-image:url('../images/newera.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    } 
+    .new__era-content {
+        background-color: black;
+    }  
+    .c42__div {
+        width: 100%;
+        height: auto;
+    }
+    .valtteri {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .valt__content {
+        width: 100%;
+        padding: 20px;
+    }
+    .valt__img {
+        width: 100%;
+    }
+    .guanyu {
+        flex-direction: column;
+        width: 100%;
+    }
+    .guanyu__content {
+        width: 100%;
+        padding: 20px;
+    }
+    .guanyu__img {
+        width: 100%;
+    }
+    .robert {
+        flex-direction: column-reverse;
+    }
+    .robert__content {
+        width: 100%;
+        padding: 20px;
+    }
+    .robert__img {
+        width: 100%;
+    }
+}

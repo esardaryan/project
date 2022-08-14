@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #292b35;
+    font-family: sequelFont;
+}
+@font-face {
+    font-family: sequelFont;
+    src: url(./../fonts/sequel100black-45-webfont.woff2);
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-solid {
+    margin-top: 0;
+    color: white;
+    margin-left: auto;
+}
+.dropdown__menu {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    padding: 20px;
+    width: 100%;
+}
+.dropdown__content-left { 
+    width: 33%;
+    max-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(255, 254, 254, 0.2); */
+    z-index: 1;
+}
+.dropdown__content-left a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown__ul-left {
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    position: absolute;
+    background-color: #292b35;
+}
+.dropdown__content-left:hover .dropdown__ul-left {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown__links-left {
+    color: white;
+}
+.home__logo-link {
+    font-size: 46px;
+    color: white;
+    font-family: 'Dancing Script';
+    text-shadow: 0 0 10px #FF0000, 0 0 10px #4d0907;
+}
+.dropdown__content-right { 
+    width: 33%;
+    max-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(255, 254, 254, 0.2); */
+    z-index: 1;
+    display: flex;
+}
+.dropdown__content-right a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown__ul-right {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: #292b35;
+}
+.dropdown__content-right:hover .dropdown__ul-right {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown__links-right {
+    color: white;
+}
+/* header end */
+@media only screen and (max-width: 1200px) {
+    .header {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .home__logo-link {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,129 @@
+.h1 {
+    color: #f4f4f4;
+    padding-left: 30px;
+}
+.content__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.article {
+    margin-top: 30px;
+}
+
+.article__link {
+    color: #f4f4f4;
+}
+.article__img {
+    width: 100%;
+    max-width: 530px;
+    height: 305px;
+    border-radius: 10px;
+}
+.article__head {
+    color: #f4f4f4;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.article__p {
+    color: #f4f4f4;
+}
+.logo__center {
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+}
+/* content__top end */
+/* content bot start */
+.content__bot {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-around;
+}
+.article__bot {
+    margin-top: 40px;
+}
+.article__link__bot {
+    color: #f4f4f4;
+}
+.article__img-bot {
+    width: 100%;
+    max-width: 700px;
+    height: 470px;
+    border-radius: 10px;
+}
+.article__head-bot {
+    color: #f4f4f4;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.article__p-bot {
+    color: #f4f4f4;
+}
+@media only screen and (min-width: 1200px) {
+    
+    .article {
+        width: 33.3333%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .article__img {
+        max-width: 100%;
+        height: auto;
+    }
+    .logo__center {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .a {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .home__logo-link {
+        width: 33.3333%;
+        display: flex;
+        justify-content: center;
+    }
+    .home__logo-link {
+        width: 100%;
+        height: auto;
+    }
+    .dropdown__ul-right {
+        margin-left: auto;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .content__top {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .article__img {
+        width: 100%;
+        height: auto;
+    }
+    .content__bot {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .article__bot {
+        width: 80%;
+    }
+    .article__img-bot {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+    }
+
+}

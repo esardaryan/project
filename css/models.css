@@ -1,0 +1,168 @@
+.h2 {
+    display: block;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+}
+.car__div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 100px;
+}
+.car__big-div {
+    margin: 0;
+    width: 50%;
+    max-width: 1000px;
+    padding-left: 100px;
+}
+.img__big {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.img__big:hover {
+    transform: scale(1.15);
+}
+.car__small-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-right: 100px;
+    padding-left: auto;
+    padding-left: 30px;
+}
+.img__small-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.margin {
+    margin-bottom: 20px;
+}
+.img__small {
+    margin-bottom: 0;
+    padding-top: 0;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    /* max-width: 300px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.img__small:hover {
+    transform: scale(2);
+}
+.img__small-right {
+    margin-bottom: 0;
+    padding-top: 0;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    /* max-width: 300px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.img__small-right:hover {
+    transform: scale(2);
+    transform-origin: right;
+    
+}
+/* first div images with bad resolution */
+.img__small1 {
+    margin-bottom: 0;
+    padding-top: 0;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    /* max-width: 300px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.img__small1:hover {
+    transform: scale(2);
+}
+.img__small-right1 {
+    margin-bottom: 0;
+    padding-top: 0;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    /* max-width: 300px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.img__small-right1:hover {
+    transform: scale(2);
+    transform-origin: right;
+    
+}
+@media only screen and (max-width: 2560px) {
+    .car__div {
+        display: flex;
+    }
+    .img__big {
+        width: 100%;
+    }
+    .car__small-div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width:1500px) {
+    .img__big {
+        width: 100%;
+    }
+    .car__small-div {
+        display: flex;
+    }
+    .img__small {
+        width: 100%;
+    }
+    .img__small-right {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .car__div {
+        flex-direction: column;
+    }
+    .car__big-div {
+        width: 100%;
+        padding: 0;
+    }
+    .car__small-div {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img__small {
+        width: 100%;
+    }
+    .img__small1 {
+        width: 266px;
+        height: 150px;
+    }
+    .img__small-right1 {
+        width: 266px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .img__small-div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}

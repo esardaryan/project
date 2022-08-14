@@ -1,0 +1,122 @@
+/* section with background */
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.top__bck-div {
+    position: relative;
+    height: 100vh;
+}
+.bck__img {
+    display: block;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+.bck__h1 {
+    position: absolute;
+    bottom: 200px;
+    left: 20px;
+    color: white;
+}
+.bck__p {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    color: white;
+}
+.header {
+    position: fixed;
+    top: 0;
+}
+/* top div section */
+.top__div {
+    flex-wrap: wrap;
+}
+.top__div-text {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+.top__div-head {
+    padding-left: 40px;
+    width: 50%;
+}
+.top__div-p {
+    padding-left: 20px;
+    width: 50%;
+    max-width: 800px;
+}
+.top__div-cont {
+    display: flex;
+    margin-top: 30px;
+}
+.top__div-content {
+    width: 50%;
+    color: white;
+}
+.top__div-img {
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+.top__div-h2 {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 2560px) {
+    .top__bck-div {
+        width: 100%;
+    }
+    .top__div-img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .top__bck-div {
+        width: 100%;
+    }
+    .top__div-content {
+        text-align: center;
+    }
+    .top__div-h2 {
+        margin-left: 1%;
+    }
+    .top__div-p {
+        margin: 0 auto;
+    }
+    .top__div-img {
+        width: 100%;
+        object-fit: cover;
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .top__bck-div {
+        width: 100%;
+    }
+    .top__div-head {
+        font-size: 16px;
+    }
+    .top__div-p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .top__div-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-left: 1%;
+    }
+}
